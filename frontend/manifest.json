@@ -1,0 +1,10 @@
+
+{
+  "name": "Walkie Web App",
+  "short_name": "Walkie",
+  "start_url": "/frontend/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": []
+}

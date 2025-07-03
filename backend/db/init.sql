@@ -1,0 +1,22 @@
+
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT UNIQUE,
+  password TEXT,
+  role TEXT DEFAULT 'user'
+);
+CREATE TABLE gps_logs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER,
+  latitude REAL,
+  longitude REAL,
+  timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE uploads (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER,
+  file_path TEXT,
+  room TEXT,
+  type TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

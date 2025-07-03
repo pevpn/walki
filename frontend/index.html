@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Walkie Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>ورود به بیسیم</h1>
+  <input id="username" placeholder="نام کاربری"><br>
+  <input id="password" placeholder="رمز" type="password"><br>
+  <button onclick="login()">ورود</button>
+
+  <h2>ارسال موقعیت</h2>
+  <button onclick="sendLocation()">ارسال GPS</button>
+
+  <h2>ارسال فایل</h2>
+  <input type="file" id="fileInput"><br>
+  <button onclick="uploadFile()">آپلود</button>
+
+  <h2>WebSocket صدا</h2>
+  <button onclick="connectWS()">اتصال</button>
+</body>
+</html>
